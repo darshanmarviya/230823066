@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Resume() {
   return (
     <>
     <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
@@ -152,4 +152,4 @@ function App() {
   );
 }
 
-export default App;
+export default Resume;
