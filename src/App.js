@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Resume from './Resumes.js';
-import Suggestion from "./Suggestions";
+//import Suggestion from "./Suggestions";
 const allData = require("./data.json");
 
 function App() {
