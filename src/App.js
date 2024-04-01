@@ -14,11 +14,10 @@ function App() {
         
       // })
       // }
-    {
       <Resume />
-    }
+  }
     </>
-  );
+  );  
 }
 
 export default App;
