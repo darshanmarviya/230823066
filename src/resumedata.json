@@ -1,0 +1,32 @@
+[
+    {
+    "image":"assets/bio.image.jpg",
+    "name":"Darshan Maraviya",
+    "address":"177 Great Portalnd Street, London W5W6PQ",
+    "phone":"+1 (965) 589-5214",
+    "email":"maraviyadarshan@gmail.com",
+    "linkedin":"linkedin.com/darshan.marviya",
+    "website":"www.darshanmaraviya.com",
+    "additionalskill":[
+        ["- Result-oriented"],
+        ["- Orienisational capacity"],
+        ["- Business Development"],
+        ["- Good Manners"]
+    ],
+    "professionalsummary":"Motivated and detail-oriented BCA graduate with a strong foundation in computer science and a passion for leveraging technology to solve real-world problems. Possessing solid programming skills in languages such as Java, Python, and C++, coupled with hands-on experience in software development, web development, and database management.Proven ability to collaborate effectively in team environments, demonstrated through successful participation in group projects and internships. Skilled in problem-solving and analytical thinking, with a commitment to staying updated on emerging technologies and industry trends.Seeking to leverage my BCA degree and practical experience to secure a challenging position in software development, where I can contribute my technical expertise and innovative mindset to drive organizational success. Eager to continue learning and growing in a dynamic and fast-paced environment within the tech industry.",
+    "workexprience":"Internships: Many BCA students undertake internships during their academic breaks or as part of their curriculum. Mention any internships related to software development, web development, data analysis, or IT support. Include details such as the duration of the internship, the responsibilities undertaken, and any notable achievements or projects completed during the internship.BCA students may also work part-time jobs in tech-related roles, such as IT support, software testing, or technical assistance. Highlight any part-time job experiences relevant to the field of computer applications, emphasizing the skills and knowledge gained while on the job.Some BCA students engage in freelance projects to gain practical experience and earn additional income. If you've worked on freelance projects, showcase your projects, clients served, technologies utilized, and outcomes achieved.BCA students often complete various academic projects as part of their coursework. These projects provide hands-on experience in areas such as software development, database management, web design, and more. Highlight key projects, outlining your role, technologies used, challenges faced, and solutions implemented.While not directly related to paid work experience, volunteering for tech-related initiatives, coding boot camps, hackathons, or community projects demonstrates initiative, teamwork, and a passion for technology. Include any volunteer experiences that showcase your skills and commitment to the field.",
+    "workexdate":"6/2021 to 4/2024",
+    "educationdetails":"Bachelor of computer science",
+    "educationdate":"2019-2021",
+    "language":[
+        ["English"],
+        ["Hindi"],
+        ["Gujarati"]
+    ],
+    "hobby":[
+        ["Cricket"],
+        ["Designer"],
+        ["Travelling"]
+    ]
+}
+]
