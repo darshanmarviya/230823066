@@ -12,7 +12,9 @@ function App() {
     <>
       {
         allData.map(function (rdata){
-          return <Resume r_name={rdata.name}
+          return <Resume 
+          //r_image={rdata.image}
+          r_name={rdata.name}
           r_address={rdata.address}
           r_phone={rdata.phone}
           r_email={rdata.email}
