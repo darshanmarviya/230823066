@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Resume from './Resumes.js';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 //import Suggestion from "./Suggestions";
 // const allData = require("./data.json");
 // const allData = require("./resumedata.json");
