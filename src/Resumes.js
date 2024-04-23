@@ -4,8 +4,8 @@ import './App.css';
 function Resume(props) {
   return (
     <>
-    <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-    <div className="resume" style={{background:"#1f1e2e", marginTop:'20px',marginLeft:'20px',padding:'5px',width:'20%'}}>
+    <div style={{display:'flex', flexDirection:'row',marginLeft:'10px'}}>
+    <div className="resume" style={{background:"#1f1e2e", marginTop:'20px',marginLeft:'20px',padding:'5px',width:'30%'}}>
 
     {/* Image */}
     <img src="assets/bio-image.jpg" alt='' style={{height:'300px', width:'250px', margin:'10%',borderRadius:'10px'}}/>
@@ -20,7 +20,8 @@ function Resume(props) {
     {/* Contact */}
       <section>
         <h3 style={{fontSize:'18px'}}>Contact</h3>
-        <h4 style={{marginTop:'-28px'}}>_____________________________________________</h4>
+        {/* <h4 style={{marginTop:'-28px'}}></h4> */}
+        <hr></hr>
 
         <h4>Address : </h4>
         <p style={{marginTop:'-20px'}}>{props.r_address}</p>
@@ -42,7 +43,7 @@ function Resume(props) {
       {/* Additional skills */}
       <section style={{marginTop:'40px'}}>
         <h3 style={{fontSize:'18px'}}>Additional Skill</h3>
-        <h4 style={{marginTop:'-28px'}}>_____________________________________________</h4>
+        <hr></hr>
 
         <p style={{marginTop:'20px',whiteSpace:'pre-wrap'}}>{props.r_additionalskill}</p>
 
@@ -55,20 +56,20 @@ function Resume(props) {
 
 
     {/* white part */}
-    <div className="resume-side" style={{background:"#c6c6cc", marginTop:'20px', marginRight:'20px', padding:'5px',width:'50%'}}>
+    <div className="resume-side" style={{background:"#c6c6cc", marginTop:'20px', marginRight:'20px', padding:'5px',width:'70%'}}>
 
     {/* Professional Summary */}
     <section style={{marginTop:'30px',marginLeft:'10px'}}>
         <h3 style={{fontSize:'18px'}}>Professional Summary</h3>
-        <h4 style={{marginTop:'-28px'}}>_______________________________________________________________________________________________________</h4>
-        <p style={{marginTop:'-20px',marginLeft:'13px', fontSize:'0.9rem',marginRight:'13px'}}>{props.r_professionalsummary}</p>
+        <hr></hr>
+        <p style={{marginTop:'20px',marginLeft:'13px', fontSize:'0.9rem',marginRight:'13px'}}>{props.r_professionalsummary}</p>
     </section>
 
 
     {/* Work Experience */}
     <section style={{marginTop:'40px',marginLeft:'10px'}}>
         <h3 style={{fontSize:'18px'}}>Work Experience</h3>
-        <h4 style={{marginTop:'-28px'}}>_______________________________________________________________________________________________________</h4>
+        <hr></hr>
         <h4 style={{textAlign:'right',marginTop:'0px',marginRight:'20px',marginBottom:'0px',marginLeft:'0px'}}>{props.r_workexdate}</h4>
         <b style={{marginLeft:'13px'}}>Android Application</b>
         <p style={{marginLeft:'18px', fontSize:'0.9rem'}}>
@@ -80,7 +81,7 @@ function Resume(props) {
     {/* Education */}
     <section style={{marginTop:'30px',marginLeft:'10px'}}>
         <h3 style={{fontSize:'18px'}}>Education Details</h3>
-        <h4 style={{marginTop:'-28px'}}>_______________________________________________________________________________________________________</h4>
+        <hr></hr>
         <h4 style={{textAlign:'right',marginTop:'0px',marginRight:'20px',marginBottom:'0px',marginLeft:'0px'}}>{props.r_educationdate}</h4>
         <p style={{marginLeft:'13px', fontSize:'0.9rem',marginTop:'0px'}}>
           <b>{props.r_educationdetails}</b>
@@ -92,7 +93,7 @@ function Resume(props) {
     {/* Language */}
     <section style={{marginTop:'40px',marginLeft:'10px'}}>
         <h3 style={{fontSize:'18px'}}>Languages</h3>
-        <h4 style={{marginTop:'-28px'}}>_______________________________________________________________________________________________________</h4>
+        <hr></hr>
         <p style={{marginLeft:'13px', fontSize:'0.9rem'}}>
           <p style={{marginTop:'-11px'}}>{props.r_language}</p>
         </p>
@@ -103,7 +104,7 @@ function Resume(props) {
     {/* Hobby */}
     <section style={{marginTop:'40px',marginLeft:'10px'}}>
         <h3 style={{fontSize:'18px'}}>Hobby</h3>
-        <h4 style={{marginTop:'-28px'}}>_______________________________________________________________________________________________________</h4>
+        <hr></hr>
         <p style={{marginLeft:'13px', fontSize:'0.9rem'}}>
           <p style={{marginTop:'-11px'}}> - Cricket</p>
           <p style={{marginTop:'-11px'}}> - Travelling</p>

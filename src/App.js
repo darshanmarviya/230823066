@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Resume from './Resumes.js';
+import Resumeform from './resumeform.js';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 //import Suggestion from "./Suggestions";
 // const allData = require("./data.json");
@@ -11,6 +12,8 @@ function App() {
   console.log(allData);
   return (
     <>
+    <div style={{display:'flex'}}>
+    <Resumeform/>
       {
         allData.map(function (rdata){
           return <Resume 
@@ -37,6 +40,7 @@ function App() {
       // }
       
       }
+      </div>
     </>
   );  
 }
