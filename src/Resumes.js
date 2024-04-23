@@ -21,7 +21,7 @@ function Resume(props) {
       <section>
         <h3 style={{fontSize:'18px'}}>Contact</h3>
         {/* <h4 style={{marginTop:'-28px'}}></h4> */}
-        <hr></hr>
+        <hr style={{color:'white'}}></hr>
 
         <h4>Address : </h4>
         <p style={{marginTop:'-20px'}}>{props.r_address}</p>
@@ -43,7 +43,7 @@ function Resume(props) {
       {/* Additional skills */}
       <section style={{marginTop:'40px'}}>
         <h3 style={{fontSize:'18px'}}>Additional Skill</h3>
-        <hr></hr>
+        <hr style={{color:'white'}}></hr>
 
         <p style={{marginTop:'20px',whiteSpace:'pre-wrap'}}>{props.r_additionalskill}</p>
 
