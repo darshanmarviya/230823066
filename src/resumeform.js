@@ -9,10 +9,15 @@ import "./App.css";
 import { React, useState } from "react";
 
 function App() {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
+    const [name, setName] = useState("");
+    const [address, setAddress] = useState("");
     const [email, setEmail] = useState("");
     const [contact, setContact] = useState("");
+    
+    //Add
+    const [linkedin, setLinkedin] = useState("");
+    const [website, setWebsite] = useState("");
+
     const [gender, setGender] = useState("male");
     const [subjects, setSubjects] = useState({
         english: true,
@@ -23,21 +28,28 @@ function App() {
     const [url, setUrl] = useState();
     const [selectedOption, setSelectedOption] =
         useState("");
-    const [about, setAbout] = useState("");
+    const [professionalsummary, setProfessionalSummary] = useState("");
+    const [workexprience, setWorkExprience] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(
-            firstName,
-            lastName,
+            name,
+            address,
             email,
             contact,
+
+            //Add
+            linkedin,
+            website,
+            
             gender,
             selectedOption,
             subjects,
             resume,
             url,
-            about
+            professionalsummary,
+            workexprience
         );
         // Add your form submission logic here
     };
@@ -50,10 +62,12 @@ function App() {
     };
     const handleReset = () => {
         // Reset all state variables here
-        setFirstName("");
-        setLastName("");
+        setName("");
+        setAddress("");
         setEmail("");
         setContact("");
+        setLinkedin("");
+        setWebsite("");
         setGender("male");
         setSubjects({
             english: true,
@@ -63,38 +77,39 @@ function App() {
         setResume("");
         setUrl("");
         setSelectedOption("");
-        setAbout("");
+        setProfessionalSummary("");
+        setWorkExprience("");
     };
 
     return (
         <div className="App">
-            <h1>Form in React</h1>
+            <h1><u>Form in React</u></h1>
             <fieldset>
                 <form action="#" method="get">
-                    <label for="firstname">
-                        First Name
+                    <label for="name">
+                        Name
                     </label>
                     <input
                         type="text"
-                        name="firstname"
-                        id="firstname"
-                        value={firstName}
+                        name="name"
+                        id="name"
+                        value={name}
                         onChange={(e) =>
-                            setFirstName(e.target.value)
+                            setName(e.target.value)
                         }
-                        placeholder="Enter First Name"
+                        placeholder="Enter Name"
                         required
                     />
-                    <label for="lastname">Last Name</label>
+                    <label for="address">Address</label>
                     <input
                         type="text"
-                        name="lastname"
-                        id="lastname"
-                        value={lastName}
+                        name="address"
+                        id="address"
+                        value={address}
                         onChange={(e) =>
-                            setLastName(e.target.value)
+                            setAddress(e.target.value)
                         }
-                        placeholder="Enter Last Name"
+                        placeholder="Enter Address"
                         required
                     />
                     <label for="email"> Email </label>
@@ -121,7 +136,36 @@ function App() {
                         placeholder="Enter Mobile number"
                         required
                     />
-                    <label for="gender">Gender</label>
+
+                    {/* //Add */}
+                    <label for="tel">Linkedin</label>
+                    <input
+                        type="text"
+                        name="linkedin"
+                        id="linkedin"
+                        value={linkedin}
+                        onChange={(e) =>
+                            setLinkedin(e.target.value)
+                        }
+                        placeholder="Enter Linkedin"
+                        required
+                    />
+
+                    <label for="tel">Website</label>
+                    <input
+                        type="text"
+                        name="website"
+                        id="website"
+                        value={website}
+                        onChange={(e) =>
+                            setWebsite(e.target.value)
+                        }
+                        placeholder="Enter website"
+                        required
+                    />
+
+
+                    {/* <label for="gender">Gender</label>
                     <input
                         type="radio"
                         name="gender"
@@ -154,40 +198,8 @@ function App() {
                             setGender(e.target.value)
                         }
                     />
-                    Other
-                    <label for="lang">
-                        Your best Subject
-                    </label>
-                    <input
-                        type="checkbox"
-                        name="lang"
-                        id="english"
-                        checked={subjects.english === true}
-                        onChange={(e) =>
-                            handleSubjectChange("english")
-                        }
-                    />
-                    English
-                    <input
-                        type="checkbox"
-                        name="lang"
-                        id="maths"
-                        checked={subjects.maths === true}
-                        onChange={(e) =>
-                            handleSubjectChange("maths")
-                        }
-                    />
-                    Maths
-                    <input
-                        type="checkbox"
-                        name="lang"
-                        id="physics"
-                        checked={subjects.physics === true}
-                        onChange={(e) =>
-                            handleSubjectChange("physics")
-                        }
-                    />
-                    Physics
+                    Other */}
+                    
                     {/* <label for="file">Upload Resume*</label>
                     <input
                         type="file"
@@ -246,18 +258,63 @@ function App() {
                             </option>
                         </optgroup>
                     </select> */}
-                    <label for="about">About</label>
+                    <label for="professionalsummary">Professional Summary</label>
                     <textarea
-                        name="about"
-                        id="about"
+                        name="professionalsummary"
+                        id="professionalsummary"
                         cols="30"
                         rows="10"
                         onChange={(e) =>
-                            setAbout(e.target.value)
+                            setProfessionalSummary(e.target.value)
                         }
                         placeholder="About your self"
                         required
                     ></textarea>
+                     <label for="workexprience">Work Exprience</label>
+                    <textarea
+                        name="workexprience"
+                        id="workexprience"
+                        cols="30"
+                        rows="10"
+                        onChange={(e) =>
+                            setWorkExprience(e.target.value)
+                        }
+                        placeholder="About your self"
+                        required
+                    ></textarea>
+                    <label for="lang">
+                        Your best Subject
+                    </label>
+                    <input
+                        type="checkbox"
+                        name="lang"
+                        id="english"
+                        checked={subjects.english === true}
+                        onChange={(e) =>
+                            handleSubjectChange("english")
+                        }
+                    />
+                    English
+                    <input
+                        type="checkbox"
+                        name="lang"
+                        id="maths"
+                        checked={subjects.maths === true}
+                        onChange={(e) =>
+                            handleSubjectChange("maths")
+                        }
+                    />
+                    Maths
+                    <input
+                        type="checkbox"
+                        name="lang"
+                        id="physics"
+                        checked={subjects.physics === true}
+                        onChange={(e) =>
+                            handleSubjectChange("physics")
+                        }
+                    />
+                    Physics
                     <button
                         type="reset"
                         value="reset"
